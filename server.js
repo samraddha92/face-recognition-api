@@ -26,7 +26,7 @@ app.use(cors());
 
 // Generic GET Route
 app.get("/", (req, res) => {
-  res.json(database.users);
+  res..send('It is working!');
 });
 
 // SIGNIN Route
