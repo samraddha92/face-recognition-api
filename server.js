@@ -54,6 +54,6 @@ app.post("/imageurl", (req, res) => {
   image.hanldeApiCall(req, res);
 });
 
-app.listen(9000, () => {
-  console.log("Server is Running on Port 9000");
+app.listen(process.env.PORT || 3000, () => {
+  console.log(`Server is Running on Port ${process.env.PORT}`);
 });
